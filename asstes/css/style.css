@@ -378,7 +378,7 @@ template {
       border-top-right-radius: 15px;
       border-top-left-radius: 15px;
       min-height: 200px;
-      max-height: 250px; }
+      max-height: auto; }
     .front_product .front_product_card .front_product_card_wrapper {
       padding: 0px 10px;
       margin-top: 20px;
