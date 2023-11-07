@@ -7,7 +7,7 @@ Template:     storefront
 Version:      1.0.0
 */
 
-.create_product {
+/* .create_product {
     display: flex;
     flex-direction: column;
     max-width: 400px;
@@ -48,4 +48,4 @@ input[type="submit"] {
 
 input[type="submit"]:hover {
     background-color: #0056b3;
-}
+} */
