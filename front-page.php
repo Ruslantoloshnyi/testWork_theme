@@ -10,7 +10,7 @@ get_header();
             <?php
             $args = array(
                 'post_type' => 'product',
-                'posts_per_page' => -1, // Получаем все товары
+                'posts_per_page' => -1,
             );
 
             $products = new WP_Query($args);
@@ -38,7 +38,7 @@ get_header();
                             </div>
                             <div class="front_product_card__date"><?php echo $creation_date; ?></div>
                             <div class="front_product_card__type"><?php echo $product_type; ?></div>
-                            <div class="front_product_card__price"><?php echo $regular_price; ?></div>
+                            <div class="front_product_card__price"><?php echo $regular_price; ?> $</div>
                             <div class="front_product_card__btn">
                                 <a href="#">to cart</a>
                             </div>
@@ -49,42 +49,9 @@ get_header();
                 }
                 wp_reset_postdata();
             }
-            else
-            {
-                echo 'No products found';
-            }
             ?>
-
         </div>
     </div>
 </main>
-
-
-<!-- <main>
-    <div class="container">
-        <div class="front_product">
-
-
-            <div class="front_product_card">
-                <div class="front_product_card__image">
-                    <img src="./asstes/image/image-17-1-3.jpg" alt="">
-                </div>
-                <div class="front_product_card_wrapper">
-                    <div class="front_product_card__name">
-                        <h3>name</h3>
-                    </div>
-                    <div class="front_product_card__date">24.01.2023</div>
-                    <div class="front_product_card__type">type</div>
-                    <div class="front_product_card__price">173</div>
-                    <div class="front_product_card__btn">
-                        <a href="#">to cart</a>
-                    </div>
-                </div>
-            </div>
-
-           
-        </div>
-    </div>
-</main> -->
 
 <?php get_footer(); ?>
