@@ -200,7 +200,8 @@ function update_product_fields()
 
         wp_update_post(array(
             'ID'         => $post_id,
-            'post_title' => $product_title
+            'post_title' => $product_title,
+            'post_status' => 'publish'
         ));
 
         echo 'success';
@@ -273,3 +274,4 @@ function update_product_fields()
     wp_die();
 }
 add_action('wp_ajax_update_product_fields', 'update_product_fields');
+add_action('wp_ajax_nopriv_update_product_fields', 'update_product_fields');
